@@ -1,3 +1,3 @@
-## My fproject portfolio website
+## My project portfolio website
 
 # Project uses HTML, SASS -> CSS
