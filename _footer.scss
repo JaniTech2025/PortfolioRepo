@@ -1,0 +1,28 @@
+@import "./mixins";
+
+
+footer{
+    background-color: rgb(4, 14, 71);
+    @include display-size(50px, 100%);    
+}
+
+/*Flex container*/
+.footer-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 10px;
+    p{
+        color: white;
+        justify-content: space-between;
+        padding-right:80%;
+        @include open-sans-mono(100)
+     }
+}
+
+/*Flex item */
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+ }

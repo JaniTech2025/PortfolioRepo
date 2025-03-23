@@ -1,0 +1,23 @@
+// <weight>: Use a value from 300 to 800
+// <uniquifier>: Use a unique and descriptive class name
+@mixin open-sans-mono($weight) {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+  @mixin assistant-navname($weight) {
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: 50px;
+    font-weight: $weight;
+    font-style: normal;
+  }
+  
+
+  @mixin display-size($height: 100, $width: 100){
+    height: $height;
+    width: $width;
+ }

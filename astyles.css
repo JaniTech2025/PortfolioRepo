@@ -1,0 +1,272 @@
+footer {
+  background-color: rgb(4, 14, 71);
+  height: 50px;
+  width: 100%;
+}
+
+/*Flex container*/
+.footer-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 10px;
+}
+.footer-container p {
+  color: white;
+  justify-content: space-between;
+  padding-right: 80%;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/*Flex item */
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  scroll-behavior: auto;
+  overflow-y: scroll;
+}
+
+a:link {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(4, 14, 71);
+  text-decoration: none;
+}
+
+a .nav__link:first-of-type {
+  font-family: "Assistant", sans-serif;
+  font-optical-sizing: 50px;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.nav {
+  border-bottom: 1px solid black;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.nav__link--margin-left {
+  margin-left: 10px;
+}
+
+.intro {
+  display: flex;
+}
+.intro__wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 16px;
+  color: white;
+}
+.intro__wrapper h1, .intro__wrapper p {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.intro__container {
+  width: 50%;
+  display: flex;
+}
+.intro__container--bg-blue {
+  background-color: rgb(4, 14, 71);
+}
+.intro__container--bg-img {
+  background-image: url("kolam.png");
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery {
+  text-align: center;
+}
+.gallery__heading {
+  padding: 20px;
+  font-weight: 200;
+}
+.gallery__wrapper {
+  border: 6px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px;
+}
+
+.card {
+  border: rgb(4, 14, 71);
+  padding: 16px;
+}
+
+.project {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.project h2 {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  margin-top: 50px;
+  color: rgb(4, 14, 71);
+}
+.project__wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+.project__box {
+  margin-top: 50px;
+  height: 300px;
+  width: 200px;
+  border: 1px solid #9e8f72;
+  background-color: rgb(255, 251, 236);
+  border-radius: 20px;
+}
+
+.skillcontainer {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(4, 14, 71);
+}
+.skillcontainer h2 {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  margin-top: 20px;
+  color: white;
+}
+.skillcontainer__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.skillcontainer__text {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 80px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 2.5ex;
+  color: white;
+}
+
+.formcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  background-color: rgb(255, 251, 236);
+}
+.formcontainer h2 {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  color: rgb(4, 14, 71);
+}
+
+.formcontainer__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+}
+
+label {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1rem;
+  display: block;
+  color: rgb(4, 14, 71);
+}
+
+.submit {
+  background-color: rgb(255, 251, 236);
+  border: 1px solid rgb(4, 14, 71);
+  border-color: 40%;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1rem;
+  color: rgb(4, 14, 71);
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.formbox {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+textarea, input[type=text], input[type=email] {
+  resize: none;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/*# sourceMappingURL=astyles.css.map */

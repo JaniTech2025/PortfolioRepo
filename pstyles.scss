@@ -1,0 +1,29 @@
+@import "./mixins";
+@import "./footer";
+$bgcolor: rgb(255, 251, 236);
+$navy: rgb(4, 14, 71);
+
+
+// project details section styling starts here
+.project{
+        display: flex;
+        // align-items: flex-start;
+    
+        &__wrapper {
+            border: 1px rgb(4, 14, 71);
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 16px;
+            color: white;
+            h1, p{
+            @include open-sans-mono(100);
+            }
+        }
+    
+}
+
+
+ 

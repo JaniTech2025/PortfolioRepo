@@ -1,0 +1,21 @@
+.review {
+  background-color: #689572;
+  border: 2px solid white;
+  padding: 20px 20px 20px 20px;
+  cursor: pointer;
+}
+
+.review:hover {
+  background-color: #82A289;
+}
+
+.submit {
+  background-color: #FAA196;
+  border: 2px solid white;
+  margin-left: 2%;
+  padding: 15px 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=_buttons.css.map */

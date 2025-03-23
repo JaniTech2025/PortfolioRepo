@@ -1,0 +1,53 @@
+footer {
+  background-color: rgb(4, 14, 71);
+  height: 50px;
+  width: 100%;
+}
+
+/*Flex container*/
+.footer-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 10px;
+}
+.footer-container p {
+  color: white;
+  justify-content: space-between;
+  padding-right: 80%;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/*Flex item */
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+}
+
+.project {
+  display: flex;
+}
+.project__wrapper {
+  border: 1px rgb(4, 14, 71);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 16px;
+  color: white;
+}
+.project__wrapper h1, .project__wrapper p {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/*# sourceMappingURL=pstyle.css.map */
