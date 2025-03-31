@@ -1,9 +1,9 @@
-@import "./mixins";
 
 
 footer{
     background-color: rgb(4, 14, 71);
-    @include display-size(50px, 100%);    
+    height: 50px;
+    width: 100px;
 }
 
 /*Flex container*/
@@ -16,7 +16,13 @@ footer{
         color: white;
         justify-content: space-between;
         padding-right:80%;
-        @include open-sans-mono(100)
+        // @include open-sans-mono(100)
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
      }
 }
 

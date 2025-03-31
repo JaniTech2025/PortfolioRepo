@@ -1,7 +1,7 @@
 footer {
   background-color: rgb(4, 14, 71);
   height: 50px;
-  width: 100%;
+  width: 100px;
 }
 
 /*Flex container*/
@@ -35,29 +35,28 @@ footer {
 }
 
 .body {
-  scroll-behavior: auto;
+  height: 100vh;
+  justify-content: center;
+  background-color: white;
   overflow-y: scroll;
+  overflow-x: scroll;
 }
 
-a:link {
+a:link,
+a:active {
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 200;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  text-decoration: none;
-}
-
-a:visited {
   color: rgb(4, 14, 71);
   text-decoration: none;
 }
 
-a .nav__link:first-of-type {
-  font-family: "Assistant", sans-serif;
-  font-optical-sizing: 50px;
-  font-weight: 800;
-  font-style: normal;
+a:visited {
+  color: dark rgb(4, 14, 71);
+  background-color: white;
+  text-decoration: none;
 }
 
 .nav {
@@ -66,9 +65,21 @@ a .nav__link:first-of-type {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  /*set sticky nav style*/
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /*set sticky nav style*/
 }
 .nav__link--margin-left {
   margin-left: 10px;
+}
+
+.stickycontent {
+  flex-grow: 1;
+  overflow-y: visible;
+  text-align: center;
+  height: calc(100% - 60px);
 }
 
 .intro {
@@ -83,7 +94,8 @@ a .nav__link:first-of-type {
   gap: 16px;
   color: white;
 }
-.intro__wrapper h1, .intro__wrapper p {
+.intro__wrapper h1,
+.intro__wrapper p {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
@@ -93,44 +105,25 @@ a .nav__link:first-of-type {
 .intro__container {
   width: 50%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .intro__container--bg-blue {
   background-color: rgb(4, 14, 71);
 }
 .intro__container--bg-img {
-  background-image: url("kolam.png");
+  background-image: url("../kolam.jpeg");
   height: 400px;
   background-size: cover;
   background-position: center;
 }
 
-.gallery {
-  text-align: center;
-}
-.gallery__heading {
-  padding: 20px;
-  font-weight: 200;
-}
-.gallery__wrapper {
-  border: 6px solid red;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding: 60px;
-}
-
-.card {
-  border: rgb(4, 14, 71);
-  padding: 16px;
-}
-
 .project {
-  height: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   background-color: white;
 }
@@ -143,14 +136,17 @@ a .nav__link:first-of-type {
   margin-top: 50px;
   color: rgb(4, 14, 71);
 }
-.project__wrapper {
-  width: 100%;
+.project .project__wrapper {
+  border: 1px rgb(4, 14, 71);
+  width: 80%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-around;
+  gap: 16px;
   color: white;
+  padding-bottom: 50px;
 }
 .project__box {
   margin-top: 50px;
@@ -159,6 +155,22 @@ a .nav__link:first-of-type {
   border: 1px solid #9e8f72;
   background-color: rgb(255, 251, 236);
   border-radius: 20px;
+}
+.project__box img {
+  height: 100px;
+  width: 100px;
+  align-items: end;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  vertical-align: bottom;
+}
+.project__box p {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+.project .project {
+  display: flex;
 }
 
 .skillcontainer {
@@ -187,9 +199,12 @@ a .nav__link:first-of-type {
   justify-content: center;
 }
 .skillcontainer__text {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 150px;
   margin-right: 150px;
-  margin-top: 80px;
+  align-items: center;
+  margin-top: 40px;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
@@ -260,13 +275,47 @@ label {
   padding-top: 20px;
 }
 
-textarea, input[type=text], input[type=email] {
+textarea,
+input[type=text],
+input[type=email] {
   resize: none;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+}
+
+footer {
+  background-color: rgb(4, 14, 71);
+  height: 50px;
+  width: 100%;
+}
+
+/*Flex container*/
+.footer-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.footer-container p {
+  color: white;
+  justify-content: space-between;
+  padding-right: 80%;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/*Flex item */
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
 }
 
 /*# sourceMappingURL=astyles.css.map */

@@ -1,0 +1,414 @@
+@use "../modules/footer";
+
+
+$bgcolor: rgb(255, 251, 236);
+$navy: rgb(4, 14, 71);
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    height: 100vh;
+    justify-content: center;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    // scroll-behavior: auto;
+    // overflow-y: scroll;
+}
+
+// .content {
+//     height: 100%;
+//     background-color: white;
+//     padding-top: 20px;
+// }
+
+
+
+a:link,
+a:active {
+    // @include open-sans-mono(200); 
+    font-family: "Open Sans", sans-serif;
+    // font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: $navy;
+    text-decoration: none;
+}
+
+a:visited {
+    color: dark $navy;
+    background-color: white;
+    text-decoration: none;
+}
+
+
+.nav {
+    border-bottom: 1px solid black;
+    // margin: 60px;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /*set sticky nav style*/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    /*set sticky nav style*/
+    &__link {
+        &--margin-left {
+            margin-left: 10px;
+        }
+    }
+
+}
+
+.stickycontent {
+    flex-grow: 1;
+    overflow-y: visible;
+    text-align: center;
+    height: calc(100% - 60px);
+}
+
+
+
+.intro {
+    display: flex;
+
+    &__wrapper {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 16px;
+        color: white;
+
+        h1,
+        p {
+            // @include open-sans-mono(100);
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+    }
+
+    &__container {
+        width: 50%;
+        display: flex;
+        flex-direction: row; //Added this
+        flex-wrap: wrap;
+
+
+        &--bg-blue {
+            background-color: rgb(4, 14, 71);
+        }
+
+        &--bg-img {
+            background-image: url("../kolam.jpeg");
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
+
+
+// project details section styling starts here
+
+.project {
+    // height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: white;
+
+
+    // .project__wrapper h1,
+    // .project__wrapper p {
+    //     font-family: "Open Sans", sans-serif;
+    //     font-optical-sizing: auto;
+    //     font-weight: 100;
+    //     font-style: normal;
+    //     font-variation-settings: "wdth" 100;
+    // }
+
+    h2 {
+        // @include open-sans-mono(200);
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+        margin-top: 50px;
+        color: $navy;
+    }
+
+    // &__wrapper {
+    //     width: 80%;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     flex-direction: row;
+    //     align-items: center;
+    //     justify-content: space-around;
+    //     color: white;
+    // }
+
+
+    .project__wrapper {
+        border: 1px rgb(4, 14, 71);
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        gap: 16px;
+        color: white;
+        // padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    &__box {
+        // display: flex;
+        // flex-wrap: wrap;
+        // flex-direction: column;
+        margin-top: 50px;
+        height: 300px;
+        width: 200px;
+        border: 1px solid #9e8f72;
+        background-color: $bgcolor;
+        border-radius: 20px;
+
+        img {
+            height: 100px;
+            width: 100px;
+            align-items: end;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            vertical-align: bottom;
+        }
+
+        p {
+            color: black;
+            font-family: "Open Sans", sans-serif;
+        }
+
+    }
+
+    .project {
+        display: flex;
+    }
+
+}
+
+
+// skill details section styling starts here
+.skillcontainer {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: $navy;
+
+    h2 {
+        // @include open-sans-mono(200);
+
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+        margin-top: 20px;
+        color: white;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__text {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 150px;
+        margin-right: 150px;
+        align-items: center;
+        margin-top: 40px;
+        // @include open-sans-mono(100);
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+        font-size: 2.5ex;
+        color: white;
+    }
+}
+
+
+
+
+// form section styling starts here
+
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-color: $bgcolor;
+
+
+    h2 {
+        // @include open-sans-mono(200);
+
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        color: $navy;
+
+    }
+}
+
+
+
+
+.formcontainer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+
+
+label {
+    // @include open-sans-mono(300);
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 1rem;
+    display: block;
+    color: $navy;
+}
+
+// Text for submit button
+
+.submit {
+    background-color: $bgcolor;
+    border: 1px solid $navy;
+    border-color: 40%;
+    // @include open-sans-mono(300);
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 1rem;
+    color: $navy;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.formbox {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+
+
+textarea,
+input[type=text],
+input[type=email] {
+    resize: none;
+    // @include open-sans-mono(200);
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+footer {
+    background-color: rgb(4, 14, 71);
+    height: 50px;
+    width: 100%;
+}
+
+/*Flex container*/
+.footer-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.footer-container p {
+    color: white;
+    justify-content: space-between;
+    padding-right: 80%;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/*Flex item */
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+}
+
+
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
