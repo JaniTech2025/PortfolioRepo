@@ -22,7 +22,6 @@ footer {
   font-variation-settings: "wdth" 100;
 }
 
-/*Flex item */
 .footer-box {
   display: flex;
   justify-content: space-between;

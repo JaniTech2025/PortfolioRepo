@@ -1,8 +1,0 @@
-Portfolip review comments
-
-@use "./scss/modules/footer";
-@use "./scss/partials/mixins" as *;
-@use "./scss/partials/colours" as *;
-
-
-https://getbootstrap.com/docs/5.0/layout/breakpoints/
