@@ -86,17 +86,16 @@ a:visited {
     display: flex;
 
     &__wrapper {
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
         gap: 16px;
         color: white;
 
         h1,
         p {
-            // @include open-sans-mono(100);
             font-family: "Open Sans", sans-serif;
             font-optical-sizing: auto;
             font-weight: 100;
@@ -109,7 +108,7 @@ a:visited {
     &__container {
         width: 50%;
         display: flex;
-        flex-direction: row; //Added this
+        flex-direction: row;
         flex-wrap: wrap;
 
 
@@ -118,7 +117,7 @@ a:visited {
         }
 
         &--bg-img {
-            background-image: url("../kolam.jpeg");
+            background-image: url("../images/20210116_151307.jpg");
             height: 400px;
             background-size: cover;
             background-position: center;
@@ -127,8 +126,35 @@ a:visited {
 }
 
 
+.intro__wrapper-image button {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-// project details section styling starts here
+.intro__wrapper-image img {
+    width: auto;
+    height: 100%;
+    object-fit: fill;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10%;
+    border-radius: 50%;
+    align-self: center;
+    padding-right: 0;
+}
+
+
+// project details section styling here
 
 .project {
     // height: 500px;
@@ -408,10 +434,14 @@ footer {
 }
 
 
-@media (min-width: 576px) {}
+@media (max-width: 768px) {
+    .intro__wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+    .into__wrapper-text {
+        text-align: center;
+    }
+}

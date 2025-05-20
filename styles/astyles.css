@@ -4,7 +4,6 @@ footer {
   width: 100px;
 }
 
-/*Flex container*/
 .footer-container {
   display: flex;
   justify-content: flex-end;
@@ -22,7 +21,6 @@ footer {
   font-variation-settings: "wdth" 100;
 }
 
-/*Flex item */
 .footer-box {
   display: flex;
   justify-content: space-between;
@@ -88,10 +86,10 @@ a:visited {
   display: flex;
 }
 .intro__wrapper {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   gap: 16px;
   color: white;
@@ -114,10 +112,37 @@ a:visited {
   background-color: rgb(4, 14, 71);
 }
 .intro__container--bg-img {
-  background-image: url("../kolam.jpeg");
+  background-image: url("../images/20210116_151307.jpg");
   height: 400px;
   background-size: cover;
   background-position: center;
+}
+
+.intro__wrapper-image button {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro__wrapper-image img {
+  width: auto;
+  height: 100%;
+  object-fit: fill;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 10%;
+  border-radius: 50%;
+  align-self: center;
+  padding-right: 0;
 }
 
 .project {
@@ -318,6 +343,17 @@ footer {
   display: flex;
   justify-content: space-between;
   padding-right: 25px;
+}
+
+@media (max-width: 768px) {
+  .intro__wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .into__wrapper-text {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=astyles.css.map */
