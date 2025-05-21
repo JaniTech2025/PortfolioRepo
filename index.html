@@ -20,134 +20,167 @@
 
 <body>
 
-    <nav class="nav">
-        <div class="nav__link fa-2x">.Jani.</div>
-        <div class="nav__wrapper">
-            <a href="#section1" class="nav__link--margin-left">About</a>
-            <a href="#section2" class="nav__link--margin-left">Projects</a>
-            <a href="#section3" class="nav__link--margin-left">Skills</a>
-            <a href="#section4" class="nav__link--margin-left">Contact</a>
+    <div class="pagecontainer">
+
+        <div class="contentwrap">
+
+            <nav class="nav">
+                <div class="nav__link fa-2x">Suba .Jani. Surianarayanan's Portfolio</div>
+                <div class="nav__wrapper">
+                    <a href="#section1" class="nav__link--margin-left">About</a>
+                    <a href="#section2" class="nav__link--margin-left">Projects</a>
+                    <a href="#section3" class="nav__link--margin-left">Skills</a>
+                    <a href="#section4" class="nav__link--margin-left">Contact</a>
+                </div>
+            </nav>
+
+            <div class="stickycontent">
+
+
+                <header class="intro">
+                    <section id="section1" class="intro__container intro__container--bg-img">
+                    </section>
+                    <section class="intro__container intro__container--bg-color">
+                        <div class="intro__wrapper">
+                            <div class="intro__wrapper-image">
+                                <button><img src="./images/smaller_dp.jpg"></button>
+                            </div>
+                            <div class="intro__wrapper-text">
+                                <h1>.About Me.</h1>
+                                <p>Hi, Welcome to my portfolio. I am a Programmer. </p>
+                                <p>When I am not coding, you are likely to find me solving a Sudoku puzzle, </p>
+                                <p>reading books, or unwinding with some Netflix.</p>
+                            </div>
+                        </div>
+                    </section>
+                </header>
+
+                <main>
+
+                    <section id="section2" class="project">
+                        <h2>.My Projects.</h2>
+                        <div class="project__wrapper">
+                            <div class="project__box">
+                                <p><img src="./images/p1.jpg"></p>
+                                <p>Hangman</p>
+                                <p>This project is a web-based Hangman game built with JavaScript. Players guess letters
+                                    using on-screen button.</p>
+                                <a href="https://github.com/JaniTech2025/hangman" target="_blank"><i
+                                        class="fa-brands fa-github icon-github fa-2x" style=" color:#9e8f72;"></i></a>
+                            </div>
+                            <div class="project__box">
+                                <p><img src="./images/p1.jpg"></p>
+                                <p>Morse Translator</p>
+                                <p>A React based interface for English and Morse code input. It auto-detects input
+                                    language. Added functions to translate both ways with correct spacing. Used Jest for
+                                    unit
+                                    tests.
+                                </p>
+                                <a href="https://github.com/JaniTech2025/MorseTranslator" target="_blank"><i
+                                        class="fa-brands fa-github icon-github fa-2x" style=" color:#9e8f72;"></i></a>
+                            </div>
+                            <div class="project__box">
+                                <p><img src="./images/p1.jpg"></p>
+                                <p>Minesweeper</p>
+                                <p>This is a simplified Minesweeper game for the Java console. Code is based on
+                                    object-oriented design.It uses a 10x10 grid with randomly placed mines.
+                                    Players enter coordinates to reveal tiles.
+                                </p>
+                                <a href="https://github.com/JaniTech2025/minesweeper" target="_blank">
+                                    <i class="fa-brands fa-github icon-github fa-2x" style=" color:#9e8f72;"></i></a>
+                            </div>
+                            <div class="project__box">
+                                <p><img src="./images/p1.jpg"></p>
+                                <p>Google Books</p>
+                                <p>Built a React-based search page based on Google Books API. Used JSX-based components
+                                    for
+                                    implementing functionality and SCSS for styling.
+                                </p>
+                                <a href="https://github.com/JaniTech2025/GoogleBooks" target="_blank"><i
+                                        class="fa-brands fa-github icon-github fa-2x" style=" color:#9e8f72;"></i></a>
+                            </div>
+                    </section>
+
+                    <section id="section3" class="skillcontainer">
+                        <h2>.My Skillset.</h2>
+                        <div class="skillcontainer__wrapper">
+                            <div class="skillcontainer__text">Python</Python>
+                            </div>
+                            <div class="skillcontainer__text">JavaScript</div>
+                            <div class="skillcontainer__text">SQL</div>
+                            <div class="skillcontainer__text">HTML</div>
+                            <div class="skillcontainer__text">CSS</div>
+                        </div>
+                    </section>
+
+                    <div class="moreinfocontainer">
+                        <div class="moreinfoimage">
+                            <img src="./images/moreintro.jpg">
+                        </div>
+                        <div class="moreinfotext">
+                            <p>I have a background in Computer Science and a
+                                love for technology and learning.</p>
+                            <p>My interest in coding began during my college days. I’ve always enjoyed the mix of logic,
+                                problem-solving, and creativity that coding offers.
+                                I'm always looking to learn something new and connect with people who share that
+                                mindset.
+                            </p>
+                            <p>I enjoy exploring different interests and believe that being open to new experiences
+                                helps me grow, both personally and professionally.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <section id="section4" class="formcontainer">
+
+                        <h2>.Contact.</h2>
+                        <div class="formcontainer__wrapper">
+
+                            <form action="mailto:janitech2025@gmail.com" method="POST" enctype="text/plain">
+
+                                <div class="formbox">
+                                    <p><label for="full-name">Full Name:</label></p>
+                                    <input type="text" id="full-name" name="full-name" required>
+                                </div>
+
+                                <div class="formbox">
+                                    <p><label for="email">Your email:</label></p>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+
+                                <div class="formbox">
+                                    <p><label for="message">Message:</label></p>
+                                    <textarea id="message" name="message" row="500" cols="75" required></textarea>
+                                </div>
+
+                                <div class="formbox">
+                                    <button type="submit" class="submit">Submit</button>
+                                </div>
+
+                        </div>
+                        </form>
+
+
+                    </section>
+                </main>
+
+            </div>
+
         </div>
-    </nav>
 
-    <div class="stickycontent">
-
-
-        <header class="intro">
-            <section id="section1" class="intro__container intro__container--bg-img">
-            </section>
-            <section class="intro__container intro__container--bg-blue">
-                <div class="intro__wrapper">
-                    <div class="intro__wrapper-image">
-                        <button><img src="./images/smaller_dp.jpg"></button>
-                    </div>
-                    <div class="inrto__wrapper-text">
-                        <h1>.About Me.</h1>
-                        <p>Hi, Welcome to my portfolio. I am a Programmer. </p>
-                        <p>When I am not coding, you are likely to find me solving a Sudoku puzzle, </p>
-                        <p>reading books, or unwinding with some Netflix.</p>
-                    </div>
-                </div>
-            </section>
-        </header>
-
-        <main>
-
-            <section id="section2" class="project">
-                <h2>.My Projects.</h2>
-                <div class="project__wrapper">
-                    <div class="project__box">
-                        <p><img src="./images/p1.jpg"></p>
-                        <p>Hangman</p>
-                        <p>Project description</p>
-                        <a href="https://github.com/JaniTech2025/hangman" target="_blank"><i
-                                class="fa-brands fa-github icon-github fa-3x" style=" color:#9e8f72;"></i></a>
-                    </div>
-                    <div class="project__box">
-                        <p><img src="./images/p1.jpg"></p>
-                        <p>Morse Translator</p>
-                        <p>Project description</p>
-                        <a href="https://github.com/JaniTech2025/MorseTranslator" target="_blank"><i
-                                class="fa-brands fa-github icon-github fa-3x" style=" color:#9e8f72;"></i></a>
-                    </div>
-                    <div class="project__box">
-                        <p><img src="./images/p1.jpg"></p>
-                        <p>Minesweeper</p>
-                        <p>Project description</p>
-                        <a href="https://github.com/JaniTech2025/minesweeper" target="_blank">
-                            <i class="fa-brands fa-github icon-github fa-3x" style=" color:#9e8f72;"></i></a>
-                    </div>
-                    <div class="project__box">
-                        <p><img src="./images/p1.jpg"></p>
-                        <p>Google Books</p>
-                        <p>Project description</p>
-                        <a href="https://github.com/JaniTech2025/GoogleBooks" target="_blank"><i
-                                class="fa-brands fa-github icon-github fa-3x" style=" color:#9e8f72;"></i></a>
-                    </div>
-            </section>
-
-            <section id="section3" class="skillcontainer">
-                <h2>.My Skillset.</h2>
-                <div class="skillcontainer__wrapper">
-                    <div class="skillcontainer__text">Python</Python>
-                    </div>
-                    <div class="skillcontainer__text">JavaScript</div>
-                    <div class="skillcontainer__text">SQL</div>
-                    <div class="skillcontainer__text">HTML</div>
-                    <div class="skillcontainer__text">CSS</div>
-                </div>
-            </section>
-
-
-
-            <section id="section4" class="formcontainer">
-
-                <h2>.Contact.</h2>
-                <div class="formcontainer__wrapper">
-
-                    <form action="mailto:janitech2025@gmail.com" method="POST" enctype="text/plain">
-
-                        <div class="formbox">
-                            <p><label for="full-name">Full Name:</label></p>
-                            <input type="text" id="full-name" name="full-name" required>
-                        </div>
-
-                        <div class="formbox">
-                            <p><label for="email">Your email:</label></p>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="formbox">
-                            <p><label for="message">Message:</label></p>
-                            <textarea id="message" name="message" row="500" cols="75" required></textarea>
-                        </div>
-
-                        <div class="formbox">
-                            <button type="submit" class="submit">Submit</button>
-                        </div>
-
-                </div>
-                </form>
-
-
-            </section>
-        </main>
+        <footer>
+            <div class="footer-container">
+                <p> &#169 copyrights Jani2025</p>
+                <div class="footer-box"><a href="https://www.linkedin.com/in/janitech2025" target="_blank"><i
+                            class="fa-brands fa-linkedin fa-2x" style="color: white;"></i></a></div>
+                <div class="footer-box"><a href="https://www.instagram.com/aussieinkspire/" target="_blank"><i
+                            class="fa-brands fa-square-instagram fa-2x" style="color: white;"></i></a></div>
+            </div>
+        </footer>
 
     </div>
-
-
-
-    <footer>
-        <div class="footer-container">
-            <p> &#169 copyrights Jani2025</p>
-            <div class="footer-box"><a href="https://www.linkedin.com/in/janitech2025" target="_blank"><i
-                        class="fa-brands fa-linkedin fa-2x" style="color: white;"></i></a></div>
-            <div class="footer-box"><a href="https://www.instagram.com/aussieinkspire/" target="_blank"><i
-                        class="fa-brands fa-square-instagram fa-2x" style="color: white;"></i></a></div>
-        </div>
-    </footer>
-
-
 
 </body>
 
